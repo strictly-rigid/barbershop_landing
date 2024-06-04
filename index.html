@@ -19,12 +19,15 @@
       <div class="container page-header-container">
         <div class="navigation">
           <div class="nav-container">
-            <a href="">
-              <img
+            <a class="logo" href="">
+              <svg class="main-logo" width="69" height="55">
+                <use href="./images/icons.svg#main-logo"></use>
+              </svg>
+              <!-- <img
                 src="./images/logo.svg"
                 alt="site logo"
                 width="69"
-                height="55" />
+                height="55" /> -->
             </a>
             <ul class="header-list list">
               <li class="header-list-item">
@@ -90,8 +93,47 @@
     </header>
 
     <main>
+      <!--SECTION HERO-->
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-soc">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a
+                  class="hero-link link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  class="hero-link link"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-wrapper">
+            <p class="pre-title hero-pre-title pre-title-theme-light">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="main-header">BarberShop</h1>
+            <p class="hero-text">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!--SECTION DESCRIPTION-->
-      <!-- <section class="description section" id="description">
+      <section class="description section" id="description">
         <div class="description-container container">
           <ul class="description-list list">
             <li class="description-item">
@@ -159,7 +201,7 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!--SECTION PRICES-->
       <section class="prices section" id="prices">
@@ -215,8 +257,303 @@
         </div>
       </section>
 
+      <!--SECTION BENEFITS-->
+      <section class="benefits-section section">
+        <div class="container benefits-container">
+          <div class="benefits-wrapper">
+            <p class="pre-title pre-title-theme-dark">Old traditional school</p>
+            <h2 class="title">¿Why people come to us?</h2>
+            <p class="benefits-text text">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
+          <ul class="benefits-list list">
+            <li class="benefits-item">
+              <span class="benefits-number">600</span>
+              <p class="benefits-item-text">Satisfied customers per day</p>
+            </li>
+            <li class="benefits-item">
+              <span class="benefits-number">50</span>
+              <p class="benefits-item-text">Awards for excellent service</p>
+            </li>
+            <li class="benefits-item">
+              <span class="benefits-number">20</span>
+              <p class="benefits-item-text">Kyiv’s best barbers</p>
+            </li>
+
+            <li class="benefits-item">
+              <span class="benefits-number">100</span>
+              <p class="benefits-item-text">Gifts for regular customers</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--SECTION OUR BARBERS-->
+      <section class="barbers section" id="barbers">
+        <div class="container barbers-container">
+          <p class="pre-title pre-title-theme-dark">
+            For true enjoyers of the atmosphere
+          </p>
+          <h2 class="barbers-title title">Our barbers</h2>
+          <ul class="barbers-list list">
+            <li class="barbers-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers/john-smith-370-346.jpg    1x,
+                    ./images/barbers/john-smith-370-346@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/barbers/john-smith-450-346.jpg    1x,
+                    ./images/barbers/john-smith-450-346@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/barbers/john-smith-418-346.jpg    1x,
+                    ./images/barbers/john-smith-418-346@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <source
+                  srcset="
+                    ./images/barbers/john-smith-418-346.jpg    1x,
+                    ./images/barbers/john-smith-418-346@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)" />
+
+                <img
+                  src=" ./images/barbers/john-smith-418-346.jpg"
+                  class="barber-img"
+                  alt="John Smith" />
+              </picture>
+
+              <div class="barbers-card-content-wrapper">
+                <h3 class="barbers-name">John Smith</h3>
+                <p class="barbers-text">Extreme Barber</p>
+                <ul class="barbers-social-list list">
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://x.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="barbers-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers/michele-doe-370-346.jpg    1x,
+                    ./images/barbers/michele-doe-370-346@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/barbers/michele-doe-450-346.jpg    1x,
+                    ./images/barbers/michele-doe-450-346@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/barbers/michele-doe-418-346.jpg    1x,
+                    ./images/barbers/michele-doe-418-346@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <source
+                  srcset="
+                    ./images/barbers/michele-doe-418-346.jpg    1x,
+                    ./images/barbers/michele-doe-418-346@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)" />
+
+                <img
+                  src=" ./images/barbers/michele-doe-418-346.jpg"
+                  class="barber-img"
+                  alt="Michele Doe" />
+              </picture>
+              <div class="barbers-card-content-wrapper">
+                <h3 class="barbers-name">Michele Doe</h3>
+                <p class="barbers-text">Extreme Barber</p>
+                <ul class="barbers-social-list list">
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://x.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="barbers-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers/alan-black-370-346.jpg    1x,
+                    ./images/barbers/alan-black-370-346@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/barbers/alan-black-450-346.jpg    1x,
+                    ./images/barbers/alan-black-450-346@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/barbers/alan-black-418-346.jpg    1x,
+                    ./images/barbers/alan-black-418-346@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <source
+                  srcset="
+                    ./images/barbers/alan-black-418-346.jpg    1x,
+                    ./images/barbers/alan-black-418-346@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)" />
+
+                <img
+                  src=" ./images/barbers/alan-black-418-346.jpg"
+                  class="barber-img"
+                  alt="Alan Black" />
+              </picture>
+              <div class="barbers-card-content-wrapper">
+                <h3 class="barbers-name">Alan Black</h3>
+                <p class="barbers-text">Extreme Barber</p>
+                <ul class="barbers-social-list list">
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://x.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers-social-item">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="barbers-social-link link"
+                      target="_blank"
+                      rel="noreferrer noopener">
+                      <svg class="barbers-social-icon" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!--SECTION GALLERY-->
-      <!-- <section class="gallery section">
+      <section class="gallery section">
         <div class="container">
           <p class="pre-title gallery-pre-title pre-title-theme-dark">
             In Latin, "barba" means "beard"
@@ -358,7 +695,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--SECTIONS CONTACTS-->
       <!-- <div class="contact-wrapper">
@@ -457,6 +794,33 @@
         </div>
       </div> -->
     </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container footer-container">
+        <p class="copyright">&#xa9; Copyright 2024</p>
+        <ul class="footer-list list">
+          <li class="hero-item">
+            <a
+              class="hero-link link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Instagram</a
+            >
+          </li>
+          <li class="hero-item">
+            <a
+              class="hero-link link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="./js/mobile-menu.js"></script>
   </body>

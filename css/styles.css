@@ -185,9 +185,6 @@ button {
   color: var(--secondary-text-color);
 }
 
-header {
-  background-color: aqua;
-}
 /* ----------------- HEADER ----------------- */
 .header-list-link,
 .header-tel {
@@ -210,6 +207,56 @@ header {
   text-transform: uppercase;
 }
 
+/* ----------------- HERO ----------------- */
+
+.hero {
+  background-color: var(--secondary-text-color);
+  background-image: linear-gradient(
+      var(--linear-gradient),
+      var(--linear-gradient)
+    ),
+    url(../images/hero/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 31px;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.main-header {
+  margin-bottom: 20px;
+  font-family: "Raleway";
+  font-size: 48px;
+  line-height: calc(56 / 48);
+  letter-spacing: 0.05em;
+  color: var(--third-text-color);
+}
+
+.hero-text {
+  max-width: 321px;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+
+  letter-spacing: 0.2em;
+
+  color: var(--headers-color);
+  /* 
+  transform: rotate(-90deg); */
+}
 /* ----------------- DESCRIPTION ----------------- */
 
 .description-wrapper {
@@ -331,6 +378,142 @@ header {
   margin: 0 auto;
 }
 
+/* ----------------- BENEFITS ----------------- */
+
+.benefits-section {
+  display: flex;
+}
+
+.benefits-wrapper {
+  margin-bottom: 44px;
+}
+
+.benefits-list {
+  display: flex;
+  width: 418px;
+  flex-wrap: wrap;
+  /* flex-shrink: 0; */
+}
+
+.benefits-number {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc (57/42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--headers-color);
+}
+
+.benefits-item > span::after {
+  position: absolute;
+  content: "+";
+  top: 2px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+
+  color: var(--accent-color);
+}
+
+.benefits-item-text {
+  text-align: center;
+  text-transform: none;
+  margin: 0;
+  margin-top: 6px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+
+  color: var(--headers-color);
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.benefits-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+/* ----------------- BARBERS ----------------- */
+
+.barbers {
+  background-color: var(--background-color);
+}
+
+.barbers-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--headers-color);
+
+  margin-bottom: 8px;
+}
+
+.barbers-text {
+  margin-bottom: 30px;
+  font-size: 14px;
+
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+.barbers-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* .barbers-card {
+  width: 100%;
+} */
+
+.barbers-card-content-wrapper {
+  padding-top: 30px;
+}
+
+.barbers-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.barbers-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third-text-color);
+}
+
+.barbers-social-icon {
+  fill: var(--headers-color);
+}
+
+.barbers-social-link:is(:hover, :focus) > .barbers-social-icon {
+  fill: var(--accent-color);
+}
 /* ----------------- CONTACTS ----------------- */
 
 .online-label {
@@ -388,6 +571,44 @@ header {
   margin-right: 16px;
 }
 
+/* ----------------- FOOTER ----------------- */
+.footer {
+  background-color: var(--background-color);
+}
+
+footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-list::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var(--primary-text-color);
+}
+
 /* ================320-...================ styles */
 
 @media screen and (min-width: 320px) {
@@ -401,9 +622,18 @@ header {
   }
 
   .header {
+    position: absolute;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .hero {
+    height: 580px;
+  }
+
+  .hero-soc {
+    display: none;
   }
 
   .description-list {
@@ -443,6 +673,17 @@ header {
 
     color: var(--headers-color);
     margin-bottom: 20px;
+  }
+
+  .barbers-card:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  .benefits-item {
+    width: 194px;
+    height: 133px;
+    padding: 20px 36px;
+    background-color: var(--background-color);
   }
 
   .gallery-pre-title {
@@ -508,8 +749,18 @@ header {
     align-items: center;
   }
 
-  .nav-container {
+  .main-logo {
+    fill: var(--third-text-color);
+  }
+
+  .header-list,
+  .header-contacts {
     display: none;
+  }
+
+  .page-header-container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .form-title {
@@ -557,13 +808,18 @@ header {
     padding-bottom: 32px;
   }
 
+  .main-logo {
+    fill: var(--headers-color);
+  }
+
   .nav-container {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .navigation {
     display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
   }
 
   .header-list {
@@ -572,6 +828,17 @@ header {
 
   .header-contacts {
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-tel {
+    margin-right: 0;
+  }
+
+  .header-list-item:not(:last-child) {
+    margin-right: 20px;
   }
 
   .mobile-menu {
@@ -580,6 +847,59 @@ header {
 
   .mobile-menu-open {
     display: none;
+  }
+
+  .hero {
+    padding-left: 0;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .hero-soc {
+    display: block;
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 27px;
+    padding-bottom: 40px;
+  }
+
+  .hero-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: bottom left;
+  }
+
+  .hero-list::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+
+  .hero-container {
+    display: flex;
+  }
+
+  .hero-wrapper {
+    background-color: var(--secondary-text-color);
+    background-image: linear-gradient(
+        var(--linear-gradient),
+        var(--linear-gradient)
+      ),
+      url(../images/hero/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding-left: 97px;
   }
 
   .description-container {
@@ -619,6 +939,19 @@ header {
     align-self: start;
   }
 
+  .benefits-wrapper {
+    max-width: 500px;
+  }
+
+  .benefits-list {
+    width: 450px;
+    margin-left: auto;
+  }
+
+  .benefits-item {
+    width: 210px;
+  }
+
   .prices {
     background-image: url(../images/prices/tablet-bg.png);
   }
@@ -633,6 +966,10 @@ header {
 
   .prices-title {
     font-size: 42px;
+  }
+
+  .barbers-container {
+    max-width: 450px;
   }
 
   .gallery-list {
@@ -672,6 +1009,10 @@ header {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin-left: 0;
+    margin-right: 0; */
   }
 
   .section {
@@ -679,9 +1020,20 @@ header {
     padding-bottom: 120px;
   }
 
+  .header {
+    padding-right: 17px;
+  }
+
   .header-list {
     display: flex;
     margin-left: 131px;
+  }
+
+  .header-contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
   }
 
   .header-list-link {
@@ -706,6 +1058,27 @@ header {
     line-height: calc(49 / 42);
   }
 
+  .benefits-list {
+    width: 370px;
+    margin-left: 0;
+  }
+
+  .benefits-item {
+    width: 170px;
+  }
+
+  .benefits-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 130px;
+    /* padding-left: 85px; */
+  }
+
+  .benefits-wrapper {
+    margin-bottom: 0;
+  }
+
   .prices {
     max-width: 1600px;
     margin: 0 auto;
@@ -724,6 +1097,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 44px;
+    padding: 0;
     background-image: none;
   }
 
@@ -745,6 +1119,15 @@ header {
       #090b13 0%,
       rgba(9, 11, 19, 0.2) 100%
     );
+  }
+
+  .barbers-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .barbers > .container {
+    max-width: 1200px;
   }
 
   .gallery-list {
