@@ -3,7 +3,461 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container page-header-container">
+        <div class="navigation">
+          <div class="nav-container">
+            <a href="">
+              <img
+                src="./images/logo.svg"
+                alt="site logo"
+                width="69"
+                height="55" />
+            </a>
+            <ul class="header-list list">
+              <li class="header-list-item">
+                <a class="header-list-link" href="#description">About</a>
+              </li>
+              <li class="header-list-item">
+                <a class="header-list-link" href="#prices"
+                  >Services and prices</a
+                >
+              </li>
+              <li class="header-list-item">
+                <a class="header-list-link" href="#barbers">Barbers</a>
+              </li>
+              <li class="header-list-item">
+                <a class="header-list-link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="header-contacts">
+              <li>
+                <a class="header-tel" href="tel:+380441111111"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+              <li>
+                <button type="button" class="btn" data-modal-open>
+                  Online-booking
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-burger-icon" width="40" height="40">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn" data-menu-close>
+            <svg class="modal-close-btn-icon" width="40" height="40">
+              <use href="./images/icons.svg#mobile-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#description">About</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#prices">Services and prices</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#barbers">Barbers</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--SECTION DESCRIPTION-->
+      <!-- <section class="description section" id="description">
+        <div class="description-container container">
+          <ul class="description-list list">
+            <li class="description-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/about1-270-445.jpg    1x,
+                    ./images/about/about1-270-445@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/about/about1-330-235.jpg    1x,
+                    ./images/about/about1-330-235@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <img
+                  src="./images/about/about1-330-235.jpg"
+                  class="gallery-img"
+                  alt="barber at work" />
+              </picture>
+            </li>
+            <li class="description-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/about2-270-445.jpg    1x,
+                    ./images/about/about2-270-445@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/about/about2-330-235.jpg    1x,
+                    ./images/about/about2-330-235@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <img
+                  src="./images/about/about1-330-235.jpg"
+                  class="gallery-img"
+                  alt="barber at work" />
+              </picture>
+            </li>
+          </ul>
+
+          <div class="description-wrapper">
+            <div class="description-text-wrapper">
+              <p class="pre-title pre-title-theme-dark">About</p>
+              <h2 class="title">Best Barbershop in your city</h2>
+              <p class="pre-text description-pre-text">
+                If you want to add more confidence to your image, you should
+                definitely visit us.
+              </p>
+              <p class="descritpion-text text">
+                We are a team that never stops at what has been achieved and are
+                thirsty for changes. And when you fall into the hands of our
+                master, you will never be the same again. We are a team that is
+                always "on the same wave" with clients. Therefore, we are always
+                ready to improve everyone who comes to us!
+              </p>
+            </div>
+            <button type="button" class="btn light-bg-btn" data-modal-open>
+              Online-booking
+            </button>
+          </div>
+        </div>
+      </section> -->
+
+      <!--SECTION PRICES-->
+      <section class="prices section" id="prices">
+        <div class="container">
+          <p class="pre-title pre-title-theme-light">
+            Spend your time with the best masters
+          </p>
+          <h2 class="prices-title title">Services and prices</h2>
+          <div class="prices-wrapper">
+            <ul class="prices-list prices-list-first">
+              <li class="prices-item prices-item-first">
+                <p class="pre-text prices-item-text">Men’s haircut</p>
+                <p class="pre-text prices-item-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item prices-item-first">
+                <p class="pre-text prices-item-text">Beard trim</p>
+                <p class="pre-text prices-item-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item prices-item-first">
+                <p class="pre-text prices-item-text">Mustache trim</p>
+                <p class="pre-text prices-item-text">from 200 uah.</p>
+              </li>
+              <li class="prices-item prices-item-first">
+                <p class="pre-text prices-item-text">Straight razor shave</p>
+                <p class="pre-text prices-item-text">from 200 uah.</p>
+              </li>
+            </ul>
+            <ul class="prices-list prices-list-second">
+              <li class="prices-item prices-item-second">
+                <p class="pre-text prices-item-text">Trainee’s haircut</p>
+                <p class="pre-text prices-item-text">from 50 uah.</p>
+              </li>
+              <li class="prices-item prices-item-second">
+                <p class="pre-text prices-item-text">
+                  Haircut under the nozzle
+                </p>
+                <p class="pre-text prices-item-text">from 200 uah.</p>
+              </li>
+              <li class="prices-item prices-item-second">
+                <p class="pre-text prices-item-text">
+                  Children’s haircut (0-12 y.o.)
+                </p>
+                <p class="pre-text prices-item-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item prices-item-second">
+                <p class="pre-text prices-item-text">Camouflage of gray hair</p>
+                <p class="pre-text prices-item-text">from 200 uah.</p>
+              </li>
+            </ul>
+          </div>
+
+          <button type="button" class="prices-btn btn">online-booking</button>
+        </div>
+      </section>
+
+      <!--SECTION GALLERY-->
+      <!-- <section class="gallery section">
+        <div class="container">
+          <p class="pre-title gallery-pre-title pre-title-theme-dark">
+            In Latin, "barba" means "beard"
+          </p>
+          <h2 class="visually-hidden">Gallery</h2>
+          <ul class="gallery-list list">
+            <li class="gallery-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery1-270-360.jpg    1x,
+                    ./images/gallery/gallery1-270-360@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery1-330-360.jpg    1x,
+                    ./images/gallery/gallery1-330-360@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery1-418-360.jpg    1x,
+                    ./images/gallery/gallery1-418-360@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery1-418-360.jpg    1x,
+                    ./images/gallery/gallery1-418-360@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)" />
+
+                <img
+                  src=" ./images/gallery/gallery1-418-360.jpg"
+                  class="gallery-img"
+                  alt="barber at work" />
+              </picture>
+            </li>
+            <li class="gallery-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery2-270-360.jpg    1x,
+                    ./images/gallery/gallery2-270-360@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery2-330-360.jpg    1x,
+                    ./images/gallery/gallery2-330-360@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery2-418-360.jpg    1x,
+                    ./images/gallery/gallery2-418-360@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery2-418-360.jpg    1x,
+                    ./images/gallery/gallery2-418-360@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)" />
+
+                <img
+                  src=" ./images/gallery/gallery2-418-360.jpg"
+                  class="gallery-img"
+                  alt="barber at work" />
+              </picture>
+            </li>
+            <li class="gallery-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery3-270-360.jpg    1x,
+                    ./images/gallery/gallery3-270-360@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery3-330-360.jpg    1x,
+                    ./images/gallery/gallery3-330-360@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery3-418-360.jpg    1x,
+                    ./images/gallery/gallery3-418-360@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery3-418-360.jpg    1x,
+                    ./images/gallery/gallery3-418-360@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)" />
+
+                <img
+                  src=" ./images/gallery/gallery3-418-360.jpg"
+                  class="gallery-img"
+                  alt="barber at work" />
+              </picture>
+            </li>
+
+            <li class="gallery-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery4-270-360.jpg    1x,
+                    ./images/gallery/gallery4-270-360@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery4-330-360.jpg    1x,
+                    ./images/gallery/gallery4-330-360@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery4-418-360.jpg    1x,
+                    ./images/gallery/gallery4-418-360@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery4-418-360.jpg    1x,
+                    ./images/gallery/gallery4-418-360@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)" />
+
+                <img
+                  src=" ./images/gallery/gallery4-418-360.jpg"
+                  class="gallery-img"
+                  alt="barber at work" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!--SECTIONS CONTACTS-->
+      <!-- <div class="contact-wrapper">
+        <div class="container contact-container">
+          <section class="section online-section">
+            <h2 class="title form-title">Online-booking</h2>
+            <form class="online-form">
+              <div class="online-field">
+                <input
+                  type="text"
+                  name="user_name"
+                  id="user_name"
+                  class="form-input form-item"
+                  pattern="[a-zA-Zа-яА-Я]+"
+                  required
+                  placeholder=" " />
+                <label for="user_name" class="online-label">Name*</label>
+              </div>
+
+              <div class="online-field">
+                <input
+                  type="tel"
+                  name="user_phone"
+                  id="user_phone"
+                  class="form-input form-item"
+                  pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="XXX-XXX-XX-XX"
+                  required
+                  placeholder=" " />
+                <label for="user_phone" class="online-label">Phone*</label>
+              </div>
+
+              <div class="online-field online-field-text">
+                <textarea
+                  class="form-message form-item"
+                  name="user_message"
+                  id="user_message"
+                  placeholder=" "></textarea>
+                <label for="user_message" class="online-label">Message</label>
+              </div>
+              <button class="btn form-btn" type="submit">Send</button>
+            </form>
+          </section>
+          <section class="section contacts-section" id="contacts">
+            <div class="contact-info-wrapper">
+              <h2 class="title contact-title">Contacts</h2>
+
+              <address class="address">
+                <ul class="list">
+                  <li class="contacts-item">
+                    <svg class="contacts-icon" width="24" height="24">
+                      <use
+                        class="contacts-vector"
+                        href="./images/icons.svg#map"></use>
+                    </svg>
+                    <a
+                      href="https://maps.app.goo.gl/9spTsCqLDmY1iRoV7"
+                      class="contacts-link contacts-link-address"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >st. Vasilkivska, 7A Kyiv, 08132</a
+                    >
+                  </li>
+                  <li class="contacts-item">
+                    <svg class="contacts-icon" width="24" height="24">
+                      <use
+                        class="contacts-vector"
+                        href="./images/icons.svg#phone"></use>
+                    </svg>
+                    <a href="tel:+380441111111" class="contacts-link"
+                      >+38 044 111 11 11</a
+                    >
+                  </li>
+                  <li class="contacts-item">
+                    <svg class="contacts-icon" width="24" height="24">
+                      <use
+                        class="contacts-vector"
+                        href="./images/icons.svg#mail"></use>
+                    </svg>
+                    <a
+                      href="mailto:barbershop@email.com"
+                      class="contacts-link contacts-link-mail"
+                      >barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="contact-hours-wrapper">
+              <p class="pre-title contacts-pre-title">Working hours</p>
+              <p class="benefits-text contacts-text">
+                Every day from 9:00 to 22:00
+              </p>
+            </div>
+          </section>
+        </div>
+      </div> -->
+    </main>
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
 </html>
